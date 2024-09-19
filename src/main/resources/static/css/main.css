@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    padding: 20px;
+    width: 400px;
+    background-color: #fff;
+}
+.contentsBox{
+    margin: 20px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class ="contentsBox">
+            <form action="/register" method="post">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" class="form-control" name = "name" id="name" aria-describedby="name" placeholder="이름을 입력하세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">전화번호</label>
+                    <input type="tel"  pattern="\d{11}" maxlength="11" title="전화번호는 숫자 11자리를 입력해야 합니다." class="form-control"  name = "phone" id="phone" placeholder="전화번호" required>
+                </div>
+                <div class="form-group">
+                    <label for="companyName">회사이름</label>
+                    <input type="text" class="form-control" name = "companyName" id="companyName" placeholder="회사이름" required>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">명함등록</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="contentsBox">
+            <form action="/search" method="post">
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <label class="sr-only" for="searchName">이름 검색</label>
+                        <input type="text" class="form-control mb-2" name = "searchName" id="searchName" placeholder="김동동씨" required>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">검색하기</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+</div>
+</body>
+</html>
