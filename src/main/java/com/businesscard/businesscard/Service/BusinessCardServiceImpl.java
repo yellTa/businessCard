@@ -19,7 +19,9 @@ public class BusinessCardServiceImpl implements BusinessCardService{
     }
     @Override
     public List<BusinessCard> findBusinessCardByName(String name) {
-        List<BusinessCard> cardList = businessCardRepository.findByName(name);
+//        List<BusinessCard> cardList = businessCardRepository.findByName(name);
+        List<BusinessCard> cardList = businessCardRepository.findByNameContaining(name);
         return cardList;
+        
     }
 }
