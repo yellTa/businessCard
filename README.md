@@ -1,11 +1,14 @@
-2시간 타임어택으로 만든 명함관리 프로그램
+# 2시간 타임어택으로 만든 명함관리 프로그램
 
 명함관리 도메인 설계 : 어렵지 않았다.
+
 Spring MVC에 대한 이해 : 하도 오랜만에 봐서 힘들었다.
+
 타임리프 사용법 : model로 전달받은 정보를 꺼내 쓸 때 사용함 타임리프
 부분은 챗지피티의 도움을 아주 많이받음
-Repository : SQL의 like구문을 메서드 쿼리로 작성하는 법이 있었음
-containing을 알게됨
+
+Repository : SQL의 like구문을 메서드 쿼리로 작성하는 법이 있었음 containing을 알게됨
+
 bootStrap : 간만에 써서 쓰는맛 좀 났다. 예전에 github 블로그 만든다고
 이리저리 꼼지락 댔던게 도움이 됐다.
 
@@ -27,6 +30,6 @@ bootStrap : 간만에 써서 쓰는맛 좀 났다. 예전에 github 블로그 �
       생각보다 빨리 만들어서 놀람
 
 ---
-240919 17:00
+# 240919 17:00 refact : RegisterController + SearchController
 서로 다르게 구현되어 있던 RegiestController+ SearchController를 하나로 합쳐 
 BusinessCardController로 변경했습니다!
