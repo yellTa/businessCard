@@ -25,3 +25,8 @@ bootStrap : 간만에 써서 쓰는맛 좀 났다. 예전에 github 블로그 �
 
 #### 후기 :
       생각보다 빨리 만들어서 놀람
+
+---
+240919 17:00
+서로 다르게 구현되어 있던 RegiestController+ SearchController를 하나로 합쳐 
+BusinessCardController로 변경했습니다!
