@@ -10,10 +10,10 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-@Transactional
 public class BusinessCardServiceImpl implements BusinessCardService{
     private final BusinessCardRepository businessCardRepository;
     @Override
+    @Transactional
     public void saveCard(BusinessCard businessCard) {
         businessCardRepository.save(businessCard);
     }
@@ -22,6 +22,5 @@ public class BusinessCardServiceImpl implements BusinessCardService{
 //        List<BusinessCard> cardList = businessCardRepository.findByName(name);
         List<BusinessCard> cardList = businessCardRepository.findByNameContaining(name);
         return cardList;
-        
     }
 }

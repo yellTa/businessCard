@@ -37,10 +37,8 @@ public class BusinessCardController {
         model.addAttribute("message", "명함이 성공적으로 등록되었습니다!");
         return "index"; // 성공 메시지를 보여주면서 다시 메인 페이지로 이동
     }
-
-
     @PostMapping("/search")
-    public String seacrhRestul(@RequestParam("searchName") String searchName, Model model){
+    public String searchResult(@RequestParam("searchName") String searchName, Model model){
 //        List<BusinessCard> results = businessCardRepository.findByName(searchName);
 
         List<BusinessCard> results = businessCardService.findBusinessCardByName(searchName);
